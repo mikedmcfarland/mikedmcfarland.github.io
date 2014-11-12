@@ -1,0 +1,223 @@
+.text-shadow{
+	text-shadow: 1px 1px 1px #000;	
+}
+
+.logo{
+	font-size: 33px;
+	text-shadow: 2px 2px 2px #2d2d2d;
+	color : rgb(248, 248, 242);
+  text-align: center;
+  vertical-align: middle;
+  /*padding-top: 2px;*/
+  /*padding-bottom: 2px;*/
+  padding-left:0px;
+  padding-right:4px;
+  font-family: Inconsolata, Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
+  /*line-height: 1.375;*/
+  direction: ltr;
+  /*text-align: left;*/
+  word-spacing: normal;
+}
+.logo-img{
+	z-index: 1;
+	height:50px;
+	width:50px;
+	position: relative;
+}
+.cursor{
+	position : relative;
+	bottom : 1.9px;
+	margin-left:  -14px;
+	font-size: 24px;
+	opacity: 1;
+	-webkit-animation: blink 1s infinite;
+	animation: blink 1s infinite;
+
+}
+.relax{
+  font-weight: normal;
+}
+h1,h2,h3,h4,h5{
+  font-weight: bold;
+}
+
+.pager a, a.btn{
+  font-size: 22px;
+  font-weight: bold;
+}
+#about img{
+  max-width: 140px;
+  padding: 10px;
+/*  padding-top: 10px;
+  padding-bottom: 10px;
+*/}
+
+.about-media{
+  vertical-align: middle;
+ 
+}
+#contact{
+  max-width: 140px;
+  padding:10px;
+}
+
+#about i{
+  padding-left: 2px;
+  padding-right: 2px;
+  font-size: 40px;
+}
+
+#about{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+@keyframes blink{
+	0% { opacity:1; }
+	40% { opacity:1;}
+	60% { opacity:0; }
+	80% { opacity:0; }
+	100% { opacity:1; }
+}
+
+@-webkit-keyframes blink{
+	0% { opacity:1; }
+	40% { opacity:1;}
+	60% { opacity:0; }
+	80% { opacity:0; }
+	100% { opacity:1; }
+}
+.transition-smooth{
+	transition: width .3s ease-in-out;
+}
+
+.btn:hover{
+	color : #f4bf75;
+}
+a:hover{
+	color: #fd971f;
+}
+
+body{
+	font-family: 'Raleway', sans-serif;
+	font-size: 18px;
+}
+.navbar-inverse{
+	background-color: rgb(39, 40, 34);
+	border-radius: 0;
+	margin-bottom: 0;
+	border-width: 3px;
+	border-bottom-color: #75715e ;
+}
+
+#affix-nav{
+	margin-top:0;
+	margin-bottom: 0;
+	font-size: 14px;	
+}
+html, body {
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased; 
+}
+
+code {
+  font-family: Inconsolata, Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
+  font-size: 16px;
+  line-height: 1.375;
+  direction: ltr;
+  text-align: left;
+  word-spacing: normal;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none; 
+  white-space: pre; 
+  white-space: pre-wrap; 
+  word-break: break-all;
+  word-wrap: break-word; 
+  background: #272822; 
+  color: #f8f8f2;
+}
+
+.page-header{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top:0;
+  font-size: 36px;
+}
+
+.invert pre{
+  padding-right:0 !important;
+  padding-left:0 !important;
+  border: 0;
+  /*border: 3px solid #383830; */
+}
+.invert{
+  color: rgb(248, 248, 242);
+  position: relative;
+  background-color: rgb(39, 40, 34);
+}
+.invert:before, .invert:after
+{
+  content:"";
+  background-color: rgb(39, 40, 34);
+  position:absolute;
+  top:0;
+  bottom:0;
+  width: 3000px;
+}
+.invert:before
+{
+  right:100%;
+}
+.invert:after
+{
+  left:100%;
+}
+
+.post-info{
+  /*margin-top: 37px;*/
+}
+.post-info > *{
+  padding-left:10px;
+  padding-right:10px;
+}
+
+/*.post-info  *{
+  padding-top: 10px;
+  padding-top: 10px;
+}*/
+.post-info i{
+  font-size: 32px
+}
+footer{
+  padding-top: 50px
+}
+
+footer .pager{
+  margin-bottom : 50px;
+}
+footer a{
+  margin-left:25px;
+  margin-right:25px;
+}
+
+header{
+  color: rgb(248, 248, 242);
+  background-color: rgb(39, 40, 34);
+}
+
+#disqus_thread{
+  min-height: 400px
+}
+#about{
+}
+
+#about .jumbotron,.well{
+  background-color: inherit;
+}
