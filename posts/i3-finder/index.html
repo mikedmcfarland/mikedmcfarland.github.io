@@ -1,0 +1,102 @@
+<!DOCTYPE html><html lang="en"><head><title>Thrown for a loop</title><meta name="viewport" content="width=device-width, initial-scale=1.0"><link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"><link rel="stylesheet" type="text/css" href="/css/bootstrap/default-bright2.css"><link rel="stylesheet" type="text/css" href="/css/main.css"><link rel="stylesheet" type="text/css" href="/css/base16-monokai.dark.css"><link href="http://fonts.googleapis.com/css?family=Raleway:800,400" rel="stylesheet" type="text/css"><!-- link(href='http://fonts.googleapis.com/css?family=Inconsolata', rel='stylesheet', type='text/css')--><link href="https://www.google.com/fonts#UsePlace:use/Collection:Source+Code+Pro:400,600" rel="stylesheet" type="text/css"></head><body role="document" data-spy="scroll" data-target="#affix-nav"><header role="navigation" class="navbar navbar-inverse shadow"><nav class="container"><div class="navbar-header"><a href="/" class="navbar-brand"> <img src="/img/logo.png" alt="logo" class="pull-right logo-img"><span class="logo">thrown <span class="cursor">|</span></span></a></div><div class="navbar-nav"><a role="button" data-toggle="collapse" data-target="#about" class="btn btn-lg"> about me</a></div></nav><div id="about" class="collapse"><div class="container"> <ul class="media-list"><li><div class="media-left media-middle"><img src="/img/me_big.jpg" class="img-circle img-responsive"></div><div class="media-body media-middle"><p>Hi, My name is <strong>Michael McFarland </strong>. I have an infatuation with programming which has forced me into creating games and interactive applications. 
+I enjoy conversing about technology, and made <strong>thrown for a loop </strong>to help me do so while giving those around me a rest.</p></div></li><li><div class="media-left media-middle"><img src="/img/game.jpg" class="img-rounded img-responsive"></div><div class="media-body media-middle"><p>As you read this I'm working on a <strong>puzzle strategy game</strong>, which is in serious need of a name. 
+In a previous life I made serious games and interactives for <a href="http://secondavenuelearning.com/">Second Avenue Learning</a>, until I made the leap and left to focus on my own
+projects. Ill post updates about those here.</p></div></li><li><div class="media-left media-middle"><div id="contact"><i class="fa fa-github-square"></i><i class="fa fa-bitbucket-square"></i><i class="fa fa-linkedin-square"></i></div></div><div class="media-body media-middle"><p>Interested in working together?  Feel free to contact me.</p></div></li></ul></div></div></header></body><div role="main" class="container"><h1 id="page-header" class="page-header invert">I3 finder</h1><div class="row"><div id="content" class="col-md-8"><article id="post"><h1 id="i3finder">I3finder</h1>
+<p><a href="https://github.com/mikedmcfarland/node-i3finder">I3 finder</a> is a program made for the <a href="https://i3wm.org/">I3 Window Manager</a>.
+It gives you dmenu access to your windows tags and workspaces. You can</p>
+<ul>
+<li>focus and move windows, tags and workspaces.</li>
+<li>jump back to previous window configuration, like 'alt tab'.</li>
+</ul>
+<p>I made it because I didn't see anything available that provided a unified interface
+for tags, windows, and workspaces. And I <em>need</em> a keyboard driven fuzzy search for just about everything.</p>
+<h2 id="installation">Installation</h2>
+<p>It's a node js script, and it's on npm and <a href="https://github.com/mikedmcfarland/node-i3finder">github</a>, and you can install it via</p>
+<div class="invert"><pre><code class="lang-bash">npm install -g i3-finder
+</code></pre></div>
+<p>You also need dmenu installed and on your path.</p>
+<h2 id="usage">Usage</h2>
+<p>Here are the command line options</p>
+<div class="invert"><pre><code class="lang-bash">$ i3finder --help
+Usage: i3finder [options]
+
+Options:
+   -d, --dmenu             The dmenu command and arguments
+   -w, --workspacePrefix   Workspace displayname prefix [workspace: ]
+   -s, --showScratch       Show scratch workspace in list
+   -t, --dontTrackState    Dont bother saving current state
+   -i, --i3msg             Command to execute when using msg action.
+   -a, --action            Action to perform.  [focus]
+</code></pre></div>
+<h3 id="focusing-and-moving-windows">Focusing and Moving windows</h3>
+<p>To move a window use</p>
+<div class="invert"><pre><code class="lang-bash">i3finder -a move
+</code></pre></div>
+<p>then select from the list. That window, tag, or workspace will all be moved to your current position.</p>
+<p>To focus a window use</p>
+<div class="invert"><pre><code class="lang-bash">i3finder
+</code></pre></div>
+<h3 id="moving-back-to-previous-focus-state-tracking">Moving back to previous focus / state tracking</h3>
+<p>To move back to the previous window state use</p>
+<div class="invert"><pre><code class="lang-bash">i3finder -action back
+</code></pre></div>
+<p><strong>But be warned</strong>, I3finder only knows about the window configurations because it saves them before making changes.
+If I3finder doesn't make the change, then it's unaware of the states.</p>
+<p>This can be useful, since normally I only want to save jumps, rather then every directional movement.
+But you can also ask i3finder to msg i3 directly, and it will keep track of changes.
+You do this through the msg action</p>
+<div class="invert"><pre><code class="lang-bash">#msg i3 with 'workspace 1' which will focus workspace 1.
+i3finder -action msg -i 'workspace 1'
+#Back will now go back to the window configuration before focusing workspace 1
+</code></pre></div>
+<h3 id="example-configuration">Example configuration</h3>
+<p>Here's a simplified version of my configuration</p>
+<div class="invert"><pre><code class="lang-bash">
+# mod p brings up a list of windows/workspaces/tags to focus
+bindsym $mod+p exec i3finder
+
+# mod g brings up a list of windows/workspaces/tags to move to the current area
+bindsym $mod+g exec i3finder -a move
+
+# mod b triggers the back manuever
+bindsym $mod+b exec i3finder -a back
+
+# change focus on vim style keys, without the finder
+# that way little motions dont mess up our history
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+
+# bind mod [num] to change to a workspace, but use msg parameter
+# so that these motions are added to our history.
+bindsym $mod+1 exec i3finder -a msg -i 'workspace 1'
+bindsym $mod+2 exec i3finder -a msg -i 'workspace 2'
+bindsym $mod+3 exec i3finder -a msg -i 'workspace 3'
+bindsym $mod+4 exec i3finder -a msg -i 'workspace 4'
+bindsym $mod+5 exec i3finder -a msg -i 'workspace 5'
+bindsym $mod+6 exec i3finder -a msg -i 'workspace 6'
+bindsym $mod+7 exec i3finder -a msg -i 'workspace 7'
+bindsym $mod+8 exec i3finder -a msg -i 'workspace 8'
+bindsym $mod+9 exec i3finder -a msg -i 'workspace 9'
+bindsym $mod+0 exec i3finder -a msg -i 'workspace 10'
+</code></pre></div>
+<h2 id="alternative-launchers">Alternative launchers</h2>
+<p>I3 finder uses dmenu by default, but you can utilize any application launcher
+that you wish. You can specify the command used to show selections via the dmenu
+parameter.</p>
+<h2 id="implementation">Implementation</h2>
+<p>It calls the i3-msg CLI, queries the current i3 tree, and then forms a
+list of selections. It pipes those selections to dmenu.
+Then based on your selection uses i3-msg CLI again to manipulate your windows.
+Other then some writing/reading of json to track state, That's about it.</p>
+</article><footer class="invert"> <div class="pager"><a href="/posts/emacs-configuration/"><i class="fa fa-arrow-left"></i> Emacs Configuration</a><a href="/posts/hello-world/">hello world <i class="fa fa-arrow-right"></i></a></div><div id="disqus_thread" class="invert"></div><script type="text/javascript">/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+var disqus_shortname = 'thrownforaloop'; // required: replace example with your forum shortname
+
+/* * * DON'T EDIT BELOW THIS LINE * * */
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script></footer></div><div id="side" class="col-md-4"><nav id="affix-nav" data-spy="affix" data-offset-top="125"><ul class="nav nav-stacked nav-pills"><li><a href="#page-header">I3 finder</a></li><li><a href="#installation">Installation</a></li><li><a href="#usage">Usage</a></li><li><a href="#alternative-launchers">Alternative launchers</a></li><li><a href="#implementation">Implementation</a></li><li><a href="#disqus_thread">comments</a></li></ul></nav></div></div></div><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script><script type="text/javascript" src="/js/bootstrap.min.js"></script><script type="text/javascript" src="/js/prism.js"></script></html>
