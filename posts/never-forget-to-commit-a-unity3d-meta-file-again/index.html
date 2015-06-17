@@ -24,18 +24,22 @@ When you're serialized data references the wrong id, then you get missing refere
 <h2 id="sec-2">What the problem looks like</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Lets say we have two developers, Bob and Sue.
+If you see "Missing Script" or similar missing assets in  your project, it's likely .meta file mismanagement.
+</p>
+
+<p>
+For example, lets say we have two developers, Bob and Sue.
 </p>
 <ul class="org-ul">
 <li>Bob creates a new behaviour called Foo.cs.
 </li>
-<li>Unity automatically generates Foo.cs.meta with a new unique ID.
+<li>Bob's Unity automatically generates Foo.cs.meta with a new unique ID.
 </li>
 <li>Bob adds and pushes Foo.cs, but not Foo.cs.meta.
 </li>
 <li>Sue pulls down the code, and Foo.cs is added to her project.
 </li>
-<li>Unity generates a Foo.cs.meta with a <b>new</b> unique ID (different then Bob's Foo.cs.meta)
+<li>Sue's Unity generates a Foo.cs.meta with a <b>new</b> unique ID (different then Bob's Foo.cs.meta)
 </li>
 </ul>
 
@@ -45,7 +49,7 @@ will have a merge conflict (Which you then need to resolve by not merging! Choos
 </p>
 
 <p>
-But often it's not caught until later, and something like this happens next:
+But often it's not caught until after references are made in scenes and prefabs, and something like this happens next:
 </p>
 <ul class="org-ul">
 <li>Bob creates a new prefab Bob.prefab, which has the behaviour Foo.
@@ -56,25 +60,35 @@ But often it's not caught until later, and something like this happens next:
 </li>
 <li>Bob adds and pushes his Bob.prefab.
 </li>
-<li>Sue pushes her Sue.prefab.
-</li>
-<li>Bob pulls, get's a merge conflict with Foo.cs.meta.
+<li>Sue commits her work then pulls, and get's a merge conflict with Foo.cs.meta.
 <ul class="org-ul">
-<li>If he resolves with <b>his</b> he gets a "Missing Script" on Sue.prefab.
+<li>If she resolves with <b>hers</b> she gets a "Missing Script" on Bob.prefab.
 </li>
-<li>If he resolves with <b>hers</b> he gets a "Missing Script" on Bob.prefab.
+<li>If she resolves with <b>his</b> she gets a "Missing Script" on Sue.prefab.
 </li>
 </ul>
 </li>
-<li>Sue pulls, and see's a "Missing Script" on Bob.prefab.
+<li>Sue resolves with <b>hers</b> because she notices the "Missing Script" on Sue.prefab, not Bob.prefab
+</li>
+<li>Sue pushes Sue.prefab and the new Foo.cs.meta.
+</li>
+<li>Bob pulls, and see's a "Missing Script" on Bob.prefab
 </li>
 </ul>
 
 <p>
 Add a few more developers into the mix and you can easily have a more complicated example,
-Where people have repeated "fixed" the meta only to cause a different reference to go missing.
+Where people have repeatedly "fixed" the meta only to cause a different reference to go missing.
 And it can happen to more then just scripts, materials and prefabs can also have faulty references.
-Figuring these things out requires too much time, and it's not that fun to explain to new developers (especially artists).
+</p>
+
+<p>
+If you see a conflict with a meta <b>stop</b> and figure out which .meta file has the most references in scenes/prefabs.
+Then pick that meta and update the rest of the assets, before committing your changes.
+</p>
+
+<p>
+Figuring these things out requires too much effort, and it's not that easy to explain to new developers (especially artists).
 </p>
 </div>
 </div>
