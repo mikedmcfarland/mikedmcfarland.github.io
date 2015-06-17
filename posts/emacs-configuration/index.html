@@ -1,7 +1,8 @@
-<!DOCTYPE html><html lang="en"><head><title>Thrown for a loop</title><meta name="viewport" content="width=device-width, initial-scale=1.0"><link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"><link rel="stylesheet" type="text/css" href="/css/bootstrap/default-bright2.css"><link rel="stylesheet" type="text/css" href="/css/main.css"><link rel="stylesheet" type="text/css" href="/css/base16-monokai.dark.css"><link href="http://fonts.googleapis.com/css?family=Raleway:800,400" rel="stylesheet" type="text/css"><!-- link(href='http://fonts.googleapis.com/css?family=Inconsolata', rel='stylesheet', type='text/css')--><link href="http://fonts.googleapis.com/css?family=Source+Code+Pro:400,600" rel="stylesheet" type="text/css"></head><body role="document" data-spy="scroll" data-target="#affix-nav"><header role="navigation" class="navbar navbar-inverse shadow"><nav class="container"><div class="navbar-header"><a href="/" class="navbar-brand"> <img src="/img/logo.png" alt="logo" class="pull-right logo-img"><span class="logo">thrown <span class="cursor">|</span></span></a></div><div class="navbar-nav"><a role="button" data-toggle="collapse" data-target="#about" class="btn btn-lg"> about me</a></div></nav><div id="about" class="collapse"><div class="container"> <ul class="media-list"><li><div class="media-left media-middle"><img src="/img/me_big.jpg" class="img-circle img-responsive"></div><div class="media-body media-middle"><p>Hi, My name is <strong>Mike McFarland </strong>. I have an infatuation with programming which has lead me to creating games and interactive applications. 
-I enjoy talking about technology, and made <strong>thrown for a loop </strong>to help me do so while giving those around me a rest.</p></div></li><li><div class="media-left media-middle"><img src="/img/game.jpg" class="img-rounded img-responsive"></div><div class="media-body media-middle"><p>As you read this I'm working on a <strong>puzzle strategy game</strong>, which is in serious need of a name. 
+<!DOCTYPE html><html lang="en"><head><title>Thrown for a loop</title><meta name="viewport" content="width=device-width, initial-scale=1.0"><link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"><link rel="stylesheet" type="text/css" href="/css/bootstrap/default-bright2.css"><link rel="stylesheet" type="text/css" href="/css/main.css"><link rel="stylesheet" type="text/css" href="/css/base16-monokai.dark.css"><link href="http://fonts.googleapis.com/css?family=Raleway:800,400" rel="stylesheet" type="text/css"><link href="http://fonts.googleapis.com/css?family=Source+Code+Pro:400,600" rel="stylesheet" type="text/css"><link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/monokai_sublime.min.css"></head><body role="document" data-spy="scroll" data-target="#affix-nav"><header role="navigation" class="navbar navbar-inverse shadow"><nav class="container"><div class="navbar-header"><a href="/" class="navbar-brand"> <img src="/img/logo.png" alt="logo" class="pull-right logo-img"><span class="logo">thrown <span class="cursor">|</span></span></a></div><div class="navbar-nav"><a role="button" data-toggle="collapse" data-target="#about" class="btn btn-lg"> about me</a></div></nav><div id="about" class="collapse"><div class="container"> <ul class="media-list"><li><div class="media-left media-middle"><img src="/img/me_big.jpg" class="img-circle img-responsive"></div><div class="media-body media-middle"><p>Hi, My name is <strong>Mike McFarland </strong>. I have an infatuation with programming which has lead me to creating games and interactive applications. 
+I enjoy talking about technology, and made <strong>thrown for a loop </strong>to help me do so while giving those around me a rest.</p></div></li><li><div class="media-left media-middle"><img src="/img/game.jpg" class="img-rounded img-responsive"></div><div class="media-body media-middle"><p>As you read this I'm working on a <strong>puzzle strategy game</strong>, called It Rains Fish. 
 In a previous life I made serious games and interactives for <a href="http://secondavenuelearning.com/">Second Avenue Learning</a>, until I made the leap and left to focus on my own
-projects. Ill post updates about those here.</p></div></li><li><div class="media-left media-middle"><div id="contact"><i class="fa fa-github-square"></i><i class="fa fa-bitbucket-square"></i><i class="fa fa-linkedin-square"></i></div></div><div class="media-body media-middle"><p>Interested in working together?  Feel free to contact me.</p></div></li></ul></div></div></header></body><div role="main" class="container"><h1 id="page-header" class="page-header invert">Emacs Configuration</h1><h5 class="invert page-date">1-29-2015</h5><div class="row"><div id="content" class="col-md-8"><article id="post"><div id="outline-container-sec-1" class="outline-2">
+projects. Ill post updates about those here.</p></div></li><li><div class="media-left media-middle"><div id="contact"><a href="https://github.com/mikedmcfarland" class="icon"><i class="fa fa-github-square"></i></a><a href="https://bitbucket.org/mikedmcfarland" class="icon"><i class="fa fa-bitbucket-square"></i></a><a href="https://www.linkedin.com/pub/michael-mcfarland/17/b06/9b" class="icon"><i class="fa fa-linkedin-square"></i></a></div></div><div class="media-body media-middle"><p>Interested in working together?  Feel free to contact me.</p></div></li></ul></div></div></header></body><div role="main" class="container"><h1 id="page-header" class="page-header invert">Emacs Configuration</h1><h5 class="invert page-date">1-29-2015</h5><div class="row"><div id="content" class="col-md-8"><article id="post">
+<div id="outline-container-sec-1" class="outline-2">
 <h2 id="sec-1">About</h2>
 <div class="outline-text-2" id="text-1">
 </div><div id="outline-container-sec-1-1" class="outline-3">
@@ -34,6 +35,12 @@ I run emacs in a <a href="http://i3wm.org">tiling window manager</a>, it takes c
 window management needs. Its nicer when all my programs operate
 tabs/windowing consistently.
 </p>
+
+<p>
+My config will be periodically updated on my blog, and since I often piece
+things together quickly and refine it later, there's likely to be mess
+from time to time
+</p>
 </div>
 </div>
 </div>
@@ -49,9 +56,9 @@ Set my name and email
 </p>
 <div class="org-src-container">
 
-<div class="invert"><pre><code class="language-scheme">(setq user-full-name "Mike McFarland"
+<pre class="src language-scheme"><code class="src scheme">(setq user-full-name "Mike McFarland"
       user-mail-address "mikedmcfarland@gmail.com")
-</code></pre></div>
+</code></pre>
 </div>
 </div>
 </div>
@@ -75,9 +82,13 @@ and required at startup.
 </p>
 <div class="org-src-container">
 
-<div class="invert"><pre><code class="language-scheme">(prelude-require-packages
+<pre class="src language-scheme"><code class="src scheme">(add-to-list 'load-path "~/.emacs.d/vendor/use-package")
+(require 'use-package)
+
+(add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
+
+(prelude-require-packages
  '(s
-   monokai-theme
    restclient
    powerline-evil
    yasnippet
@@ -85,8 +96,13 @@ and required at startup.
    expand-region
    evil-nerd-commenter
    js2-refactor
+   key-chord
+   aggressive-indent
+   req-package
    ))
-</code></pre></div>
+
+(require 'req-package)
+</code></pre>
 </div>
 </div>
 </div>
@@ -99,38 +115,73 @@ store backups in one folder instead next to the file
 </p>
 <div class="org-src-container">
 
-<div class="invert"><pre><code class="language-scheme">(setq backup-directory-alist `(("." . "~/.emacs.d/.backups")))
-</code></pre></div>
+<pre class="src language-scheme"><code class="src scheme">(setq backup-directory-alist `(("." . "~/.emacs.d/.backups")))
+
+(setq make-backup-files t               ; backup of a file the first time it is saved.
+      backup-by-copying t               ; don't clobber symlinks
+      version-control t                 ; version numbers for backup files
+      delete-old-versions t             ; delete excess backup files silently
+      delete-by-moving-to-trash t
+      kept-old-versions 6               ; oldest versions to keep when a new numbered backup is made (default: 2)
+      kept-new-versions 9               ; newest versions to keep when a new numbered backup is made (default: 2)
+      auto-save-default t               ; auto-save every buffer that visits a file
+      auto-save-timeout 20              ; number of seconds idle time before auto-save (default: 30)
+      auto-save-interval 200            ; number of keystrokes between auto-saves (default: 300)
+      )
+</code></pre>
 </div>
 </div>
 </div>
 
+
 <div id="outline-container-sec-2-5" class="outline-3">
-<h3 id="sec-2-5">Save Place</h3>
+<h3 id="sec-2-5">Auto Save</h3>
 <div class="outline-text-3" id="text-2-5">
+<p>
+Auto save is fine, just don't do it in my working directories
+</p>
+<div class="org-src-container">
+
+<pre class="src language-scheme"><code class="src scheme">(defvar user-temporary-file-directory
+  (concat temporary-file-directory user-login-name "/"))
+
+(setq auto-save-list-file-prefix
+      (concat user-temporary-file-directory ".auto-saves-"))
+(setq auto-save-file-name-transforms
+      `((".*" ,user-temporary-file-directory t)))
+</code></pre>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-sec-2-6" class="outline-3">
+<h3 id="sec-2-6">Save Place</h3>
+<div class="outline-text-3" id="text-2-6">
 <p>
 Save cursor position when reopening a file
 </p>
 <div class="org-src-container">
 
-<div class="invert"><pre><code class="language-scheme">(setq save-place-file "~/.emacs.d/saveplace")
+<pre class="src language-scheme"><code class="src scheme">(setq save-place-file "~/.emacs.d/saveplace")
 (setq-default save-place t)
 (require 'saveplace)
-</code></pre></div>
+</code></pre>
 </div>
 </div>
 </div>
 
-<div id="outline-container-sec-2-6" class="outline-3">
-<h3 id="sec-2-6">Aesthetics</h3>
-<div class="outline-text-3" id="text-2-6">
+<div id="outline-container-sec-2-7" class="outline-3">
+<h3 id="sec-2-7">Aesthetics</h3>
+<div class="outline-text-3" id="text-2-7">
 <p>
 Load the monokai theme (Sublime Text's default colors)
 </p>
 <div class="org-src-container">
 
-<div class="invert"><pre><code class="language-scheme">(load-theme 'monokai t)
-</code></pre></div>
+<pre class="src language-scheme"><code class="src scheme">(add-to-list 'custom-theme-load-path "~/.emacs.d/vendor/monokai-emacs")
+(load-theme 'monokai t)
+</code></pre>
 </div>
 
 <p>
@@ -139,8 +190,8 @@ Helps when word wrapping is on.
 </p>
 <div class="org-src-container">
 
-<div class="invert"><pre><code class="language-scheme">(global-visual-line-mode t)
-</code></pre></div>
+<pre class="src language-scheme"><code class="src scheme">(global-visual-line-mode t)
+</code></pre>
 </div>
 
 <p>
@@ -149,47 +200,94 @@ were requiring me to re-run expressions after connecting another client
 </p>
 <div class="org-src-container">
 
-<div class="invert"><pre><code class="language-scheme">(add-to-list 'default-frame-alist '(font .   "Source Code Pro 12" ))
-</code></pre></div>
+<pre class="src language-scheme"><code class="src scheme">(add-to-list 'default-frame-alist '(font .   "Source Code Pro 12" ))
+</code></pre>
 </div>
+
+<p>
+Configure whitespace mode
+</p>
+<div class="org-src-container">
+
+<pre class="src language-scheme"><code class="src scheme">(setq whitespace-style
+      '(face tabs empty trailing))
+</code></pre>
+</div>
+
 
 <p>
 A few miscallaneious things
 </p>
 <div class="org-src-container">
 
-<div class="invert"><pre><code class="language-scheme"> (display-time-mode t)
+<pre class="src language-scheme"><code class="src scheme">(display-time-mode t)
 
- ;;smooth scrolling
- (setq scroll-margin 5
-       scroll-conservatively 9999
-       scroll-step 1)
+;;smooth scrolling
+(setq scroll-margin 5
+      scroll-conservatively 9999
+      scroll-step 1)
 
-(defun set-my-margins()
+
+(defun set-my-margins ()
+  (interactive)
   (setq left-margin-width 1)
-  (setq right-margin-width 1))
+  ;; (setq right-margin-width 1)
+  (setq left-fringe-width 5)
+  (setq right-fringe-width 10)
+  )
 
 (add-hook 'text-mode-hook 'set-my-margins)
 (add-hook 'prog-mode-hook 'set-my-margins)
 
+
+
+(setq linum-format " %d ")
+
+(use-package hlinum
+  :ensure
+  :config
+  (progn
+    (hlinum-activate)
+    ))
+
+(add-hook 'prog-mode-hook 'linum-mode)
+
 (powerline-evil-vim-color-theme)
-</code></pre></div>
+
+(setq-default tab-width 2)
+</code></pre>
+</div>
 </div>
 </div>
 
-<div id="outline-container-sec-2-6-1" class="outline-4">
-<h4 id="sec-2-6-1"><span class="todo TODO">TODO</span> make margins dynamic</h4>
-<div class="outline-text-4" id="text-2-6-1">
+<div id="outline-container-sec-2-8" class="outline-3">
+<h3 id="sec-2-8">Configuration helpers</h3>
+<div class="outline-text-3" id="text-2-8">
 <p>
-currently we have static margins, it'd be nice to allow things to look
-centered when there's plenty of room (fullscreen)
+I map evil shortcuts allot, these are those mappings shorter.
 </p>
-</div>
-</div>
-</div>
-</div>
+<div class="org-src-container">
 
+<pre class="src language-scheme"><code class="src scheme">;;Unmap prelude evils ace jump
+(define-key evil-normal-state-map (kbd "SPC") nil)
 
+(defun map-all-evil-states (keys action)
+  "maps key combination to action for all evil modes"
+  (define-key evil-normal-state-map keys action)
+  (define-key evil-insert-state-map keys action)
+  (define-key evil-visual-state-map keys action))
+(defun map-n-v-evil-states (keys action)
+  (define-key evil-normal-state-map keys action)
+  (define-key evil-visual-state-map keys action))
+
+(defun map-n-i-evil-states (keys action)
+  (define-key evil-normal-state-map keys action)
+  (define-key evil-insert-state-map keys action))
+</code></pre>
+</div>
+</div>
+</div>
+</div>
 <div id="outline-container-sec-3" class="outline-2">
 <h2 id="sec-3">Javascript</h2>
 <div class="outline-text-2" id="text-3">
@@ -201,8 +299,8 @@ set js refactors prefix
 </p>
 <div class="org-src-container">
 
-<div class="invert"><pre><code class="language-scheme">(js2r-add-keybindings-with-prefix (kbd "C-c C-r"))
-</code></pre></div>
+<pre class="src language-scheme"><code class="src scheme">(js2r-add-keybindings-with-prefix (kbd "C-c C-r"))
+</code></pre>
 </div>
 </div>
 </div>
@@ -215,12 +313,12 @@ when in js mode as well.
 </p>
 <div class="org-src-container">
 
-<div class="invert"><pre><code class="language-scheme">(setq-default js-indent-level 2)
+<pre class="src language-scheme"><code class="src scheme">(setq-default js-indent-level 2)
 (add-hook 'prelude-js-mode-hook
 	  (lambda() (setq evil-shift-width 2)))
 
 (setq-default js2-basic-offset 2)
-</code></pre></div>
+</code></pre>
 </div>
 </div>
 </div>
@@ -233,7 +331,7 @@ Highlighting/style settings. Don't worry about semicolons. And use harmony.
 </p>
 <div class="org-src-container">
 
-<div class="invert"><pre><code class="language-scheme">(setq-default js2-highlight-level 3)
+<pre class="src language-scheme"><code class="src scheme">(setq-default js2-highlight-level 3)
 (setq-default js2-highlight-external-variables t)
 
 (setq-default js2-concat-multiline-strings t)
@@ -241,7 +339,7 @@ Highlighting/style settings. Don't worry about semicolons. And use harmony.
 (setq-default js2-pretty-multiline-declarations nil)
 
 (setq-default js2-language-version 200)
-</code></pre></div>
+</code></pre>
 </div>
 
 <p>
@@ -249,9 +347,9 @@ configuration so we use jslint, and allow node externs
 </p>
 <div class="org-src-container">
 
-<div class="invert"><pre><code class="language-scheme">(setq-default js2-include-jslint-globals t)
+<pre class="src language-scheme"><code class="src scheme">(setq-default js2-include-jslint-globals t)
 (setq-default js2-include-node-externs t)
-</code></pre></div>
+</code></pre>
 </div>
 </div>
 </div>
@@ -264,15 +362,16 @@ Little script for jumping between tests and implementations. Made
 with a <a href="http://emacs.stackexchange.com/questions/7308/define-key-to-toggle-between-javascript-implementation-and-test-file/7316#7316">little help</a>. Expects A structure with a lib directory for
 implementations, and a test directory for specs, Like so:
 </p>
-<div class="invert"><pre class="example">lib/foo.js
+<pre class="example">
+lib/foo.js
 lib/someDir/bar.js
 test/fooSpec.js
 test/someDir/barSpec.js
-</pre></div>
+</pre>
 
 <div class="org-src-container">
 
-<div class="invert"><pre><code class="language-scheme">(defun js-jump-to (current from to format-name)
+<pre class="src language-scheme"><code class="src scheme">(defun js-jump-to (current from to format-name)
   (find-file
    (cl-loop with parts = (reverse current)
 	    with fname = (file-name-sans-extension (cl-first parts))
@@ -300,87 +399,216 @@ test/someDir/barSpec.js
      ((member "lib" current)  (js-jump-to current "lib" "test" 'js-format-test-name))
      (t (error "not within a test or lib directory"))
   )))
-</code></pre></div>
-</div>
+</code></pre>
 </div>
 </div>
 </div>
 
-
-
-<div id="outline-container-sec-4" class="outline-2">
-<h2 id="sec-4">Jade</h2>
-<div class="outline-text-2" id="text-4">
+<div id="outline-container-sec-3-5" class="outline-3">
+<h3 id="sec-3-5">align declarations</h3>
+<div class="outline-text-3" id="text-3-5">
 <p>
-jade-mode didn't install, so I've added it into vendor as a submodule
-and am initializing it manually
+Aligning require statements at the top, or variable literal assignments
+is something that can make code more readable, but its too painful to do
+manually all the time. This seeks out '=' or ':' in lines, and aligns them.
 </p>
+
 <div class="org-src-container">
 
-<div class="invert"><pre><code class="language-scheme">(add-to-list 'load-path "~/.emacs.d/vendor/jade-mode")
-(require 'jade-mode)
-(add-to-list 'auto-mode-alist '("\\.jade$" . jade-mode))
-</code></pre></div>
+<pre class="src language-scheme"><code class="src scheme">(defun js-align-assignments (&amp;optional NUM)
+  (interactive "p")
+  ;;Keep them separate align calls, otherwise colons align with spaces
+  ;;if they're in the same region
+  (align-regexp (region-beginning) (region-end) "\\(\\s-*\\)=")
+  (align-regexp (region-beginning) (region-end) "\\(\\s-*\\):"))
+
+(evil-define-key `normal js2-mode-map (kbd "SPC \\") 'js-align-assignments)
+(evil-define-key `visual js2-mode-map (kbd "SPC \\") 'js-align-assignments)
+</code></pre>
 </div>
 </div>
 </div>
 
+
+
+<div id="outline-container-sec-3-6" class="outline-3">
+<h3 id="sec-3-6">convert module imports</h3>
+<div class="outline-text-3" id="text-3-6">
+<div class="org-src-container">
+
+<pre class="src language-scheme"><code class="src scheme">(defun convert-cmjs-to-es6 ()
+  (interactive)
+  (let ((from (concat
+	       "\\(const\\|var\\|let\\)[[:space:]]+"
+	       "\\([A-Za-z0-9_\$]+\\)[[:space:]]+=[[:space:]]+"
+	       "require([\"|']\\([^'|^\"]+\\)[\"|'])"))
+	(to "import %s from '%s'"))
+    (beginning-of-buffer)
+    (while (re-search-forward from nil t)
+      (replace-match (format to (match-string 2) (match-string 3))))))
+</code></pre>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-sec-3-7" class="outline-3">
+<h3 id="sec-3-7">misc</h3>
+<div class="outline-text-3" id="text-3-7">
+<div class="org-src-container">
+
+<pre class="src language-scheme"><code class="src scheme">(add-to-list 'auto-mode-alist '("\\.jsx\\'" . js2-mode))
+</code></pre>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4">Python</h2>
+<div class="outline-text-2" id="text-4">
+<div class="org-src-container">
+
+<pre class="src language-scheme"><code class="src scheme">(setq python-guess-indent nil)
+(setq python-indent 2)
+</code></pre>
+</div>
+</div>
+</div>
 
 <div id="outline-container-sec-5" class="outline-2">
-<h2 id="sec-5">elisp</h2>
+<h2 id="sec-5">C#</h2>
 <div class="outline-text-2" id="text-5">
+<div class="org-src-container">
+
+<pre class="src language-scheme"><code class="src scheme">(use-package csharp-mode
+  :ensure
+  :config
+  (progn
+    ))
+
+(use-package omnisharp
+  :load-path "~/.emacs.d/vendor/omnisharp-emacs"
+  :config
+  (progn
+    (add-hook 'csharp-mode-hook 'omnisharp-mode)
+    (setq omnisharp-debug t)
+    ))
+</code></pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-6" class="outline-2">
+<h2 id="sec-6">Scala</h2>
+<div class="outline-text-2" id="text-6">
+<div class="org-src-container">
+
+<pre class="src language-scheme"><code class="src scheme">(use-package ensime
+  :ensure
+  :commands ensime-scala-mode-hook
+  ;; :load-path "~/.emacs.d/vendor/ensime"
+  :init
+  (add-hook 'scala-mode-hook 'ensime-scala-mode-hook)
+  :config
+  (progn
+    (evil-define-key `normal ensime-mode-map (kbd "SPC ee") 'ensime-print-errors-at-point)
+    (evil-define-key `normal ensime-mode-map (kbd "SPC et") 'ensime-print-type-at-point)
+    (evil-define-key `normal ensime-mode-map (kbd "SPC ei") 'ensime-import-type-at-point)
+    (evil-define-key `normal ensime-mode-map (kbd "SPC ed") 'ensime-edit-definition)
+
+    (evil-define-key `normal ensime-mode-map (kbd "SPC er") 'ensime-refactor-rename)
+    (evil-define-key `normal ensime-mode-map (kbd "SPC eo") 'ensime-refactor-organize-imports)
+
+    (evil-define-key `normal ensime-mode-map (kbd "SPC en") 'ensime-reload)))
+</code></pre>
+</div>
+</div>
+</div>
+
+
+
+<div id="outline-container-sec-7" class="outline-2">
+<h2 id="sec-7">Jade</h2>
+<div class="outline-text-2" id="text-7">
+<div class="org-src-container">
+
+<pre class="src language-scheme"><code class="src scheme">(use-package jade-mode
+  :load-path "~/.emacs.d/vendor/jade-mode"
+  :mode "\\.jade$")
+</code></pre>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-sec-8" class="outline-2">
+<h2 id="sec-8">elisp</h2>
+<div class="outline-text-2" id="text-8">
 <p>
 Emacs has warnings about documenting elisp code.
 I don't follow these rules, so disable them
 </p>
 <div class="org-src-container">
 
-<div class="invert"><pre><code class="language-scheme">(setq-default flycheck-disabled-checkers '(emacs-lisp-checkdoc))
-</code></pre></div>
+<pre class="src language-scheme"><code class="src scheme">(setq-default flycheck-disabled-checkers '(emacs-lisp-checkdoc))
+</code></pre>
 </div>
 </div>
 </div>
 
 
+<div id="outline-container-sec-9" class="outline-2">
+<h2 id="sec-9">dot diagrams</h2>
+<div class="outline-text-2" id="text-9">
+<div class="org-src-container">
 
-<div id="outline-container-sec-6" class="outline-2">
-<h2 id="sec-6">Snippets And Autocompletion</h2>
-<div class="outline-text-2" id="text-6">
-</div><div id="outline-container-sec-6-1" class="outline-3">
-<h3 id="sec-6-1">Yasnippet</h3>
-<div class="outline-text-3" id="text-6-1">
+<pre class="src language-scheme"><code class="src scheme">(use-package graphviz-dot-mode
+  :load-path "~/.emacs.d/vendor/graphviz-dot-mode"
+  :mode "\\.dot$")
+</code></pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-10" class="outline-2">
+<h2 id="sec-10">Snippets And Autocompletion</h2>
+<div class="outline-text-2" id="text-10">
+</div><div id="outline-container-sec-10-1" class="outline-3">
+<h3 id="sec-10-1">Yasnippet</h3>
+<div class="outline-text-3" id="text-10-1">
 <p>
 Load YASnippet configuration
 </p>
 <div class="org-src-container">
 
-<div class="invert"><pre><code class="language-scheme">(setq yas-snippet-dirs '("~/.emacs.d/snippets"))
+<pre class="src language-scheme"><code class="src scheme">(setq yas-snippet-dirs '("~/.emacs.d/snippets"))
 (yas-reload-all)
 (add-hook 'prog-mode-hook 'yas-minor-mode)
 (add-hook 'text-mode-hook 'yas-minor-mode)
 (add-hook 'org-mode-hook  'yas-minor-mode)
-</code></pre></div>
+</code></pre>
 </div>
 </div>
 </div>
-<div id="outline-container-sec-6-2" class="outline-3">
-<h3 id="sec-6-2">Company</h3>
-<div class="outline-text-3" id="text-6-2">
+<div id="outline-container-sec-10-2" class="outline-3">
+<h3 id="sec-10-2">Company</h3>
+<div class="outline-text-3" id="text-10-2">
 <p>
 Using mainly companys default prelude settings. Except I
 don't want any delay in suggestions.
 </p>
 <div class="org-src-container">
 
-<div class="invert"><pre><code class="language-scheme">(setq company-idle-delay 0)
-</code></pre></div>
+<pre class="src language-scheme"><code class="src scheme">(setq company-idle-delay 0)
+</code></pre>
 </div>
 </div>
 </div>
 
-<div id="outline-container-sec-6-3" class="outline-3">
-<h3 id="sec-6-3">Tab</h3>
-<div class="outline-text-3" id="text-6-3">
+<div id="outline-container-sec-10-3" class="outline-3">
+<h3 id="sec-10-3">Tab</h3>
+<div class="outline-text-3" id="text-10-3">
 <p>
 So, Company mode and YASnippet step on each other toes. So These
 functions are to help TAB have the behaviour I expect. Attempt
@@ -396,7 +624,7 @@ these actions, and do the first one that works.
 </ol>
 <div class="org-src-container">
 
-<div class="invert"><pre><code class="language-scheme">(defun check-expansion ()
+<pre class="src language-scheme"><code class="src scheme">(defun check-expansion ()
   (save-excursion
     (if (looking-at "\\_&gt;") t
       (backward-char 1)
@@ -417,7 +645,7 @@ these actions, and do the first one that works.
 	(if (check-expansion)
 	    (company-complete-common)
 	  (indent-for-tab-command)))))
-</code></pre></div>
+</code></pre>
 </div>
 
 <p>
@@ -428,7 +656,7 @@ modes.
 
 <div class="org-src-container">
 
-<div class="invert"><pre><code class="language-scheme">(defun bind-tab-properly ()
+<pre class="src language-scheme"><code class="src scheme">(defun bind-tab-properly ()
   "Binds tab to tab-indent-or-complete, overwritting yas and company bindings"
   (interactive)
   ;;overwrite yas and company tab mappings
@@ -438,39 +666,35 @@ modes.
   (define-key company-active-map (kbd "TAB") 'tab-indent-or-complete))
 
 (add-hook 'company-mode-hook 'bind-tab-properly)
-</code></pre></div>
+</code></pre>
 </div>
-</div>
-
-<div id="outline-container-sec-6-3-1" class="outline-4">
-<h4 id="sec-6-3-1"><span class="todo TODO">TODO</span> make tab binding / completion a minor mode</h4>
 </div>
 </div>
 </div>
 
-<div id="outline-container-sec-7" class="outline-2">
-<h2 id="sec-7">Custom Commands</h2>
-<div class="outline-text-2" id="text-7">
-</div><div id="outline-container-sec-7-1" class="outline-3">
-<h3 id="sec-7-1">create-new-empty-buffer</h3>
-<div class="outline-text-3" id="text-7-1">
+<div id="outline-container-sec-11" class="outline-2">
+<h2 id="sec-11">Custom Commands</h2>
+<div class="outline-text-2" id="text-11">
+</div><div id="outline-container-sec-11-1" class="outline-3">
+<h3 id="sec-11-1">create-new-empty-buffer</h3>
+<div class="outline-text-3" id="text-11-1">
 <div class="org-src-container">
 
-<div class="invert"><pre><code class="language-scheme">(defun create-new-empty-buffer ()
+<pre class="src language-scheme"><code class="src scheme">(defun create-new-empty-buffer ()
   "Open a new empty buffer."
   (interactive)
   (let ((buf (generate-new-buffer "untitled")))
     (switch-to-buffer buf)
     (funcall (and initial-major-mode))
     (setq buffer-offer-save t)))
-</code></pre></div>
+</code></pre>
 </div>
 </div>
 </div>
 
-<div id="outline-container-sec-7-2" class="outline-3">
-<h3 id="sec-7-2">just-my-main-window</h3>
-<div class="outline-text-3" id="text-7-2">
+<div id="outline-container-sec-11-2" class="outline-3">
+<h3 id="sec-11-2">just-my-main-window</h3>
+<div class="outline-text-3" id="text-11-2">
 <p>
 This is something I created with some <a href="http://emacs.stackexchange.com/questions/7418/define-a-main-window-and-then-close-all-others/7424#7424">help</a>. The main window is
 defined per frame, and at any point I may wish to close all
@@ -479,7 +703,7 @@ windows besides the main (to get back to work).
 
 <div class="org-src-container">
 
-<div class="invert"><pre><code class="language-scheme">(defun mark-this-window-as-main ()
+<pre class="src language-scheme"><code class="src scheme">(defun mark-this-window-as-main ()
   "Mark the current window as the main window."
   (interactive)
   (mapc (lambda (win) (set-window-parameter win 'main nil))
@@ -494,7 +718,7 @@ windows besides the main (to get back to work).
   "Show only the main window"
   (interactive)
   (delete-other-windows (get-main-window)))
-</code></pre></div>
+</code></pre>
 </div>
 
 <p>
@@ -504,181 +728,596 @@ main. That'll be code and document windows.
 
 <div class="org-src-container">
 
-<div class="invert"><pre><code class="language-scheme">(add-hook 'prog-mode-hook 'mark-this-window-as-main)
+<pre class="src language-scheme"><code class="src scheme">(add-hook 'prog-mode-hook 'mark-this-window-as-main)
 (add-hook 'text-mode-hook 'mark-this-window-as-main)
 (add-hook 'org-mode-hook 'mark-this-window-as-main)
-</code></pre></div>
-</div>
-</div>
-</div>
-</div>
-
-
-
-<div id="outline-container-sec-8" class="outline-2">
-<h2 id="sec-8">Org-mode</h2>
-<div class="outline-text-2" id="text-8">
-</div><div id="outline-container-sec-8-1" class="outline-3">
-<h3 id="sec-8-1">org-babel</h3>
-<div class="outline-text-3" id="text-8-1">
-<p>
-language definitions for org babel
-</p>
-<div class="org-src-container">
-
-<div class="invert"><pre><code class="language-scheme">(org-babel-do-load-languages
- 'org-babel-load-languages
- '((js . t)
-   (emacs-lisp . t)
-   (scala . t)
-   (sh . t)))
-</code></pre></div>
-</div>
-</div>
-</div>
-</div>
-
-<div id="outline-container-sec-9" class="outline-2">
-<h2 id="sec-9">Global Key Bindings</h2>
-<div class="outline-text-2" id="text-9">
-<div class="org-src-container">
-
-<div class="invert"><pre><code class="language-scheme">(global-set-key (kbd "C-c C-m") 'just-my-main-window)
-
-(global-set-key (kbd "C-j") 'company-select-next-or-abort)
-(global-set-key (kbd "C-k") 'company-select-previous-or-abort)
-
-(global-set-key (kbd "RET") 'newline-and-indent)
-
-(global-set-key (kbd "C-p") 'projectile-find-file)
-;;Remap alt p to switching a project with projectile
-(global-set-key (kbd "M-p") 'projectile-switch-project)
-
-;;Have no idea why up and down are doing absurd things, but this helped
-(global-set-key (kbd "&lt;up&gt;") 'evil-previous-visual-line)
-(global-set-key (kbd "&lt;down&gt;") 'evil-next-visual-line)
-(global-set-key (kbd "C-h") 'previous-buffer)
-(global-set-key (kbd "C-l") 'next-buffer)
-(global-set-key (kbd "C-q") 'kill-this-buffer)
-
-(global-set-key (kbd "C-S-SPC") 'er/contract-region)
-(global-set-key (kbd "C-SPC") 'er/expand-region)
-</code></pre></div>
-</div>
-</div>
-
-<div id="outline-container-sec-9-1" class="outline-3">
-<h3 id="sec-9-1"><span class="todo TODO">TODO</span> Clean up keyboard shortcuts</h3>
-<div class="outline-text-3" id="text-9-1">
-<ul class="org-ul">
-<li>More consistency is needed, think about appropriate prefixes.
-</li>
-<li>Ctrl p is a poor project launching shortcut (too many
-applications use it for 'previous'
-</li>
-</ul>
-</div>
-</div>
-</div>
-
-
-
-
-<div id="outline-container-sec-10" class="outline-2">
-<h2 id="sec-10">Evil Key Bindings</h2>
-<div class="outline-text-2" id="text-10">
-<div class="org-src-container">
-
-<div class="invert"><pre><code class="language-scheme">(defun map-all-evil-states (keys action)
-  "maps key combination to action for all evil modes"
-  (define-key evil-normal-state-map keys action)
-  (define-key evil-insert-state-map keys action)
-  (define-key evil-visual-state-map keys action))
-
-(define-key evil-insert-state-map (kbd "C-j") 'company-select-next-or-abort)
-(define-key evil-insert-state-map (kbd "C-k") 'company-select-previous-or-abort)
-
-(map-all-evil-states (kbd "C-S-r") 'js2r-rename-var)
-(map-all-evil-states (kbd "C-S-l") 'js2r-log-this)
-(map-all-evil-states (kbd "C-t")   'js-jump-to-implementation-or-test)
-
-;;map control p to finding a file with projectile
-(map-all-evil-states (kbd "C-p") 'projectile-find-file)
-
-;;have j and k go down to next visual line
-(define-key evil-normal-state-map (kbd "j") 'evil-next-visual-line)
-(define-key evil-normal-state-map (kbd "k") 'evil-previous-visual-line)
-
-(map-all-evil-states (kbd "C-s") 'save-buffer)
-(map-all-evil-states (kbd "C-n") 'create-new-empty-buffer)
-(map-all-evil-states (kbd "C-/") 'evilnc-comment-or-uncomment-lines)
-(define-key evil-normal-state-map (kbd "gp") 'evil-select-last-yanked-text)
-</code></pre></div>
-</div>
-</div>
-</div>
-
-
-<div id="outline-container-sec-11" class="outline-2">
-<h2 id="sec-11">Evil</h2>
-<div class="outline-text-2" id="text-11">
-<p>
-Evil is an emulation layer for Vim ontop of emacs. It's a very faithful emulation.
-</p>
-</div>
-
-<div id="outline-container-sec-11-1" class="outline-3">
-<h3 id="sec-11-1">Select last yanked text</h3>
-<div class="outline-text-3" id="text-11-1">
-<p>
-This function will select whatever texted you pasted last (in the buffer).
-</p>
-<div class="org-src-container">
-
-<div class="invert"><pre><code class="language-scheme">(defun evil-select-last-yanked-text ()
-  "uses evils markers to select the last yanked text"
-  (interactive)
-  (evil-goto-mark ?\[)
-  (evil-visual-char)
-  (evil-goto-mark ?\]))
-</code></pre></div>
-</div>
-</div>
-</div>
-<div id="outline-container-sec-11-2" class="outline-3">
-<h3 id="sec-11-2">kj to exit insert mode</h3>
-<div class="outline-text-3" id="text-11-2">
-<p>
-kj is more convenient then escape for exiting insert mode
-</p>
-<div class="org-src-container">
-
-<div class="invert"><pre><code class="language-scheme">;;Define KJ as espace while in insert
-(define-key evil-insert-state-map "k" #'cofi/maybe-exit)
-
-(evil-define-command cofi/maybe-exit ()
-  :repeat change
-  (interactive)
-  (let ((modified (buffer-modified-p)))
-    (insert "k")
-    (let ((evt (read-event (format "Insert %c to exit insert state" ?j)
-			   nil 0.5)))
-      (cond
-       ((null evt) (message ""))
-       ((and (integerp evt) (char-equal evt ?j))
-	(delete-char -1)
-	(set-buffer-modified-p modified)
-	(push 'escape unread-command-events))
-       (t (setq unread-command-events (append unread-command-events
-					      (list evt))))))))
-</code></pre></div>
+</code></pre>
 </div>
 </div>
 </div>
 
 <div id="outline-container-sec-11-3" class="outline-3">
-<h3 id="sec-11-3">Escape should exit things</h3>
+<h3 id="sec-11-3">kill file and buffer</h3>
 <div class="outline-text-3" id="text-11-3">
+<div class="org-src-container">
+
+<pre class="src language-scheme"><code class="src scheme">(defun delete-this-buffer-and-file ()
+  "Removes file connected to current buffer and kills buffer."
+  (interactive)
+  (let ((filename (buffer-file-name))
+	(buffer (current-buffer))
+	(name (buffer-name)))
+    (if (not (and filename (file-exists-p filename)))
+	(error "Buffer '%s' is not visiting a file!" name)
+      (when (yes-or-no-p "Are you sure you want to remove this file? ")
+	(delete-file filename)
+	(kill-buffer buffer)
+	(message "File '%s' successfully removed" filename)))))
+
+(map-n-v-evil-states " df" 'delete-this-buffer-and-file)
+</code></pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-11-4" class="outline-3">
+<h3 id="sec-11-4">Insert todays date</h3>
+<div class="outline-text-3" id="text-11-4">
+<div class="org-src-container">
+
+<pre class="src language-scheme"><code class="src scheme">(defun put-todays-date ()
+  (interactive)
+  (insert (shell-command-to-string "todays-date")))
+</code></pre>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div id="outline-container-sec-12" class="outline-2">
+<h2 id="sec-12">Org-mode</h2>
+<div class="outline-text-2" id="text-12">
+</div><div id="outline-container-sec-12-1" class="outline-3">
+<h3 id="sec-12-1">Misc</h3>
+<div class="outline-text-3" id="text-12-1">
+<p>
+Automatically put us into org-indent-mode when editing org files
+</p>
+<div class="org-src-container">
+
+<pre class="src language-scheme"><code class="src scheme">(add-hook 'org-mode-hook 'org-indent-mode)
+</code></pre>
+</div>
+
+<p>
+some custom shortcuts
+</p>
+<div class="org-src-container">
+
+<pre class="src language-scheme"><code class="src scheme">(evil-define-key 'normal org-mode-map " ol" 'org-toggle-link-display)
+</code></pre>
+</div>
+<div class="org-src-container">
+
+<pre class="src language-scheme"><code class="src scheme">;; (setq org-src-fontify-natively t)
+(setq org-src-fontify-natively nil)
+</code></pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-12-2" class="outline-3">
+<h3 id="sec-12-2">magit-ediff</h3>
+<div class="outline-text-3" id="text-12-2">
+<p>
+When using magit-ediff org files sometimes have collapsed headings. This makes it fairly
+hard to resolve any conflicts. This makes everything visible when using ediff.
+</p>
+<div class="org-src-container">
+
+<pre class="src language-scheme"><code class="src scheme">(add-hook 'ediff-prepare-buffer-hook 'f-ediff-prepare-buffer-hook-setup)
+(defun f-ediff-prepare-buffer-hook-setup ()
+  ;; specific modes
+  (cond ((eq major-mode 'org-mode)
+	 (f-org-vis-mod-maximum))
+	;; room for more modes
+	)
+  ;; all modes
+  (setq truncate-lines nil))
+(defun f-org-vis-mod-maximum ()
+  "Visibility: Show the most possible."
+  (cond
+   ((eq major-mode 'org-mode)
+    (visible-mode 1)  ; default 0
+    (setq truncate-lines nil)  ; no `org-startup-truncated' in hook
+    (setq org-hide-leading-stars t))  ; default nil
+   (t
+    (message "ERR: not in Org mode")
+    (ding))))
+</code></pre>
+</div>
+</div>
+</div>
+
+
+
+<div id="outline-container-sec-12-3" class="outline-3">
+<h3 id="sec-12-3">org-babel</h3>
+<div class="outline-text-3" id="text-12-3">
+<p>
+language definitions for org babel
+</p>
+<div class="org-src-container">
+
+<pre class="src language-scheme"><code class="src scheme">(org-babel-do-load-languages
+ 'org-babel-load-languages
+ '((js . t)
+   (emacs-lisp . t)
+   (scala . t)
+   (sh . t)
+   (dot . t)
+   (python . t)
+   (gnuplot . t)
+   ))
+</code></pre>
+</div>
+
+<p>
+open source code blocks in new frames.
+</p>
+<div class="org-src-container">
+
+<pre class="src language-scheme"><code class="src scheme">(set 'org-src-window-setup 'current-window)
+</code></pre>
+</div>
+
+<p>
+org mode maps the language mode by name, remap to proper modes
+when the language name doesn't match exactly
+</p>
+<div class="org-src-container">
+
+<pre class="src language-scheme"><code class="src scheme">(add-to-list 'org-src-lang-modes '("js" . js2))
+(add-to-list 'org-src-lang-modes '("dot" . graphviz-dot))
+</code></pre>
+</div>
+
+<p>
+lets use babel-node instead of node (for es6 features).
+This needs babel installed globally to work.
+</p>
+<div class="org-src-container">
+
+<pre class="src language-scheme"><code class="src scheme">(setq org-babel-js-cmd "babel-node")
+</code></pre>
+</div>
+
+<p>
+use relative file links when tangling/detangling
+</p>
+<div class="org-src-container">
+
+<pre class="src language-scheme"><code class="src scheme">(setq org-babel-tangle-use-relative-file-links t)
+</code></pre>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-sec-12-4" class="outline-3">
+<h3 id="sec-12-4">org-agenda</h3>
+<div class="outline-text-3" id="text-12-4">
+<p>
+Pull in all org files for my agenda from:
+</p>
+<ul class="org-ul">
+<li>my ~/notes directory
+</li>
+<li>recursively through my ~/projects
+
+<div class="org-src-container">
+
+<pre class="src language-scheme"><code class="src scheme">(defun update-org-agenda-files ()
+  (interactive)
+  (let*
+      ((entries
+	'("~/notes"))
+       (rec-entries
+	'("~/projects"))
+       (rec-files
+	(mapcan
+	 'find-org-file-recursively
+	 rec-entries))
+
+       (all-org-files (append entries rec-files)))
+    (setq org-agenda-files all-org-files)))
+
+(defun find-org-file-filter (name)
+  (not (s-contains? "node_modules" name)))
+
+;; recursively find .org files in provided directory
+;; modified from an Emacs Lisp Intro example
+(defun find-org-file-recursively (directory &amp;optional filext)
+  "Return .org and .org_archive files recursively from DIRECTORY.
+If FILEXT is provided, return files with extension FILEXT instead."
+  ;; FIXME: interactively prompting for directory and file extension
+  (let* (org-file-list
+	 (case-fold-search t)           ; filesystems are case sensitive
+	 (file-name-regex "^[^.#].*")   ; exclude .*
+	 (filext (if filext filext "org$\\\|org_archive"))
+	 (fileregex (format "%s\\.\\(%s$\\)" file-name-regex filext))
+	 (cur-dir-list (directory-files directory t file-name-regex)))
+    ;; loop over directory listing
+    (dolist (file-or-dir cur-dir-list org-file-list) ; returns org-file-list
+      (cond
+       ((file-regular-p file-or-dir) ; regular files
+	(if (string-match fileregex file-or-dir) ; org files
+	    (add-to-list 'org-file-list file-or-dir)))
+       ((file-directory-p file-or-dir)
+	(if (find-org-file-filter file-or-dir)
+	    (dolist (org-file (find-org-file-recursively file-or-dir filext)
+			      org-file-list) ; add files found to result
+	      (add-to-list 'org-file-list org-file))))))))
+
+(update-org-agenda-files)
+</code></pre>
+</div>
+</li>
+</ul>
+
+
+
+<p>
+Configure shortcuts and settings for org agenda
+</p>
+<div class="org-src-container">
+
+<pre class="src language-scheme"><code class="src scheme">(use-package org-agenda
+  :bind ("C-c a" . org-agenda)
+  :config
+  (progn
+    ;;we dont use evil in agenda, but j/k should be vim style
+    (define-key org-agenda-mode-map "j" 'org-agenda-next-line)
+    (define-key org-agenda-mode-map "k" 'org-agenda-previous-line)
+    ;; (setq org-agenda-start-with-follow-mode t)
+    ))
+</code></pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-12-5" class="outline-3">
+<h3 id="sec-12-5">org-capture</h3>
+<div class="outline-text-3" id="text-12-5">
+<p>
+Set up capture templates and shortcuts.
+</p>
+<div class="org-src-container">
+
+<pre class="src language-scheme"><code class="src scheme">(use-package org-capture
+  :config
+  (progn
+    (setq org-capture-templates
+	  '(
+	    ("t" "Todo" entry (file+headline "~/notes/tasks.org" "Tasks")
+	     "* TODO %?\n  %i\n  %a")
+	    ("e" "Emacs Todo" entry (file+headline "~/.emacs.d/personal/settings.org" "Tasks")
+	     "* TODO %?\n  %i\n  %a")
+	    ("p" "Project Todo" entry (function bear-org-project-jump-to-tasks)
+	     "* TODO %?\n  %i\n  %a")
+	    ("j" "Journal" entry (file+datetree "~/notes/journal.org")
+	     "* %?\nEntered on %U\n  %i\n  %a")))
+
+    (map-n-v-evil-states " oc" 'org-capture)
+    ))
+</code></pre>
+</div>
+
+<p>
+These functions allow the project template to work.
+They add tasks to the appropriate org file (and section) based on the current project.
+</p>
+
+<div class="org-src-container">
+
+<pre class="src language-scheme"><code class="src scheme">(defun bear-org-jump-to-tasks()
+  "Jumps to the tasks within the current org file. If no task section
+exists, one is created"
+  (interactive)
+  (goto-char (point-min))
+  (unless
+      (re-search-forward
+       "^[[:space:]]*\\*.[[:space:]]*\\(tasks\\|planned\\|todos\\)[[:space:]]*"
+       nil t)
+    (progn
+      (goto-char (point-max))
+      (newline)
+      (insert "* Tasks")
+      (newline))))
+
+(defun bear-org-project-jump ()
+  "Jumps to the projects org file (dominating file named readme.org or
+todo.org in)"
+  (interactive)
+  (let* ((dir (file-name-directory (buffer-file-name)))
+	 (match "^\\([rR][eE][aA][dD][mM][dE]\\|[tT][oO][dD][oO]\\)\\.[oO][rR][gG]$")
+	 (get-matched (lambda(parent) (car (directory-files parent nil match))))
+	 (matched-dir (locate-dominating-file dir get-matched))
+	 (matched-file (funcall get-matched matched-dir)))
+    (find-file (concat matched-dir matched-file))))
+
+
+(defun bear-org-project-jump-to-tasks ()
+  "Finds the org file and location associated with project tasks, and jumps to it"
+  (interactive)
+  (if (string= (file-name-extension (buffer-file-name)) "org")
+      (bear-org-jump-to-tasks)
+    (progn
+      (bear-org-project-jump)
+      (bear-org-jump-to-tasks))))
+</code></pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-12-6" class="outline-3">
+<h3 id="sec-12-6">org-clock (time-tracking)</h3>
+<div class="outline-text-3" id="text-12-6">
+<p>
+set up org clocking shortcuts and settings
+</p>
+<div class="org-src-container">
+
+<pre class="src language-scheme"><code class="src scheme">(setq org-clock-persist 'history)
+(org-clock-persistence-insinuate)
+
+(use-package org-clock
+  :config
+  (progn
+    (map-n-v-evil-states " oki" 'org-clock-in)
+    (map-n-v-evil-states " oko" 'org-clock-out)
+    (map-n-v-evil-states " okx" 'org-clock-in-last)
+    (map-n-v-evil-states " oke" 'org-clock-out)
+    (add-hook 'org-clock-in-prepare-hook
+	      'my-org-mode-ask-effort)
+
+    (defun my-org-mode-ask-effort ()
+      "Ask for an effort estimate when clocking in."
+      (unless (org-entry-get (point) org-effort-property)
+	(let ((effort
+	       (completing-read
+		(format "%s: " org-effort-property)
+		(org-entry-get-multivalued-property (point) org-effort-property))))
+	  (unless (equal effort "")
+	    (org-set-property org-effort-property effort)))))
+    ))
+</code></pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-12-7" class="outline-3">
+<h3 id="sec-12-7">org-sync</h3>
+<div class="outline-text-3" id="text-12-7">
+<div class="org-src-container">
+
+<pre class="src language-scheme"><code class="src scheme"> (add-to-list 'load-path "~/.emacs.d/vendor/org-sync")
+ (require 'os)
+;; (require 'os-bb)
+;; (require 'os-github)
+;; (require 'os-rmine)
+</code></pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-12-8" class="outline-3">
+<h3 id="sec-12-8">org-scrum</h3>
+<div class="outline-text-3" id="text-12-8">
+<div class="org-src-container">
+
+<pre class="src language-scheme"><code class="src scheme">(use-package gnuplot
+  :ensure
+  :config
+  (progn
+    ))
+
+(use-package gnuplot-mode
+  :ensure
+  :config
+  (progn
+    ))
+
+(use-package scrum
+  :load-path "~/.emacs.d/vendor/emacs-scrum"
+  :config
+  (progn
+    (setq org-effort-property "ESTIMATED")
+
+    ))
+</code></pre>
+</div>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-sec-13" class="outline-2">
+<h2 id="sec-13">Web Mode</h2>
+<div class="outline-text-2" id="text-13">
+<div class="org-src-container">
+
+<pre class="src language-scheme"><code class="src scheme">(use-package web-mode
+  :ensure
+  :config
+  (progn
+    (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
+    ;; (add-to-list 'auto-mode-alist '("\\.jsx\\'" . web-mode))
+    ))
+</code></pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-14" class="outline-2">
+<h2 id="sec-14">Key Bindings</h2>
+<div class="outline-text-2" id="text-14">
+<p>
+A bunch of keybindings that really should be put into appropriate sections.
+</p>
+<div class="org-src-container">
+
+<pre class="src language-scheme"><code class="src scheme">;;remove forward motion from evil motion ma
+(define-key evil-motion-state-map " " nil)
+
+(define-key evil-normal-state-map (kbd "g t") 'js-jump-to-implementation-or-test)
+
+;;map control s p to finding a file with projectile
+(global-set-key (kbd "C-S-p") 'projectile-find-file)
+
+;;have j and k go down to next visual line
+(define-key evil-normal-state-map (kbd "j") 'evil-next-visual-line)
+(define-key evil-normal-state-map (kbd "k") 'evil-previous-visual-line)
+
+(global-set-key (kbd "C-c C-n") 'create-new-empty-buffer)
+(global-set-key (kbd "C-c C-o") 'just-my-main-window)
+(define-key org-mode-map (kbd "C-c C-o") 'just-my-main-window)
+
+(global-set-key (kbd "RET") 'newline-and-indent)
+
+;;Remap alt p to switching a project with projectile
+(global-set-key (kbd "M-p") 'projectile-switch-project)
+
+(global-set-key (kbd "C-h") 'previous-buffer)
+(global-set-key (kbd "C-l") 'next-buffer)
+(global-set-key (kbd "C-S-h") 'winner-undo)
+(global-set-key (kbd "C-S-l") 'winner-redo)
+(global-set-key (kbd "C-c C-q") 'kill-this-buffer)
+
+(global-set-key (kbd "C-S-m") 'mc/mark-all-like-this-dwim)
+(map-n-v-evil-states (kbd "SPC m") 'mc/mark-next-like-this)
+(define-key mc/keymap (kbd "C-n") 'mc/mark-next-like-this)
+(define-key mc/keymap (kbd "C-S-n") 'mc/skip-to-next-like-this)
+(define-key mc/keymap (kbd "C-p") 'mc/unmark-next-like-this)
+(define-key mc/keymap (kbd "C-S-p") 'mc/unmark-previous-like-this)
+
+(global-set-key (kbd "C-S-SPC") 'er/contract-region)
+(global-set-key (kbd "C-SPC") 'er/expand-region)
+
+(map-n-v-evil-states (kbd "SPC j") 'evil-ace-jump-two-chars-mode)
+(map-n-v-evil-states (kbd "SPC r") 'js2r-rename-var)
+(map-n-v-evil-states (kbd "SPC l") 'js2r-log-this)
+(map-n-v-evil-states (kbd "SPC c") 'evilnc-comment-or-uncomment-lines)
+(map-n-v-evil-states (kbd "SPC p") 'projectile-find-file)
+
+(global-set-key (kbd "C-s") 'save-buffer)
+(map-n-v-evil-states (kbd "SPC s") 'save-buffer)
+
+(define-key evil-normal-state-map (kbd "gp") 'evil-select-last-yanked-text)
+
+(setq evil-default-state `normal)
+(evil-define-key `normal org-src-mode-map (kbd "SPC '") 'org-edit-src-save-and-exit)
+(evil-define-key `normal org-src-mode-map (kbd "SPC s") 'org-edit-src-save)
+(define-key org-src-mode-map (kbd "C-s") 'org-edit-src-save)
+(evil-define-key `normal org-mode-map (kbd "SPC '") 'org-edit-special)
+
+
+(defun org-edit-src-save-and-exit()
+  (interactive)
+  (org-edit-src-save)
+  (org-edit-src-exit 'exit))
+
+;; (map-n-v-evil-states  (kbd "SPC i") 'helm-swoop)
+(global-set-key (kbd "C-S-i") 'helm-projectile-ack)
+
+;; (define-key isearch-mode-map (kbd "M-i") 'helm-swoop-from-isearch)
+;; (require 'helm-swoop)
+;; (define-key helm-swoop-map (kbd "M-i") 'helm-multi-swoop-all-from-helm-swoop)
+
+(map-n-v-evil-states (kbd "go") 'find-file-other-frame)
+(define-key company-active-map (kbd "C-n") 'company-select-next-or-abort)
+(define-key company-active-map (kbd "C-p") 'company-select-previous-or-abort)
+
+(define-key js2-mode-map (kbd "C-c C-o") nil)
+
+(define-key evil-normal-state-map (kbd "C-u") 'evil-scroll-up)
+(define-key evil-visual-state-map (kbd "C-u") 'evil-scroll-up)
+(define-key evil-insert-state-map (kbd "C-u")
+  (lambda ()
+    (interactive)
+    (evil-delete (point-at-bol) (point))))
+
+(map-n-i-evil-states (kbd "C-S-k") 'move-text-up)
+(map-n-i-evil-states (kbd "C-S-j") 'move-text-down)
+
+;; (evil-define-key `normal js2-mode-map (kbd "C-S-k") 'js2r-move-line-up)
+;; (evil-define-key `insert js2-mode-map (kbd "C-S-k") 'js2r-move-line-up)
+;; (evil-define-key `normal js2-mode-map (kbd "C-S-j") 'js2r-move-line-down)
+;; (evil-define-key `insert js2-mode-map (kbd "C-S-j") 'js2r-line-move-down)
+
+;; (define-key evil-normal-state-local-map (kbd "&lt;right&gt;") 'hannesr/evil-normal-move-character-forward)
+;; (define-key evil-normal-state-local-map (kbd "&lt;left&gt;") 'hannesr/evil-normal-move-character-backward)
+;; (define-key evil-visual-state-local-map (kbd "&lt;right&gt;") 'hannesr/evil-visual-move-selection-forward)
+;; (define-key evil-visual-state-local-map (kbd "&lt;left&gt;") 'hannesr/evil-visual-move-selection-backward)
+</code></pre>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-sec-15" class="outline-2">
+<h2 id="sec-15">Key chords</h2>
+<div class="outline-text-2" id="text-15">
+<p>
+kj is a convenient exit compared to escape
+</p>
+<div class="org-src-container">
+
+<pre class="src language-scheme"><code class="src scheme">(setq key-chord-two-keys-delay 0.5)
+(key-chord-define evil-insert-state-map "kj" 'evil-normal-state)
+(key-chord-mode +1)
+</code></pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-16" class="outline-2">
+<h2 id="sec-16">Evil</h2>
+<div class="outline-text-2" id="text-16">
+<p>
+Evil is an emulation layer for Vim ontop of emacs. It's a very faithful emulation.
+</p>
+</div>
+
+<div id="outline-container-sec-16-1" class="outline-3">
+<h3 id="sec-16-1">Select last yanked text</h3>
+<div class="outline-text-3" id="text-16-1">
+<p>
+This function will select whatever texted you pasted last (in the buffer).
+</p>
+<div class="org-src-container">
+
+<pre class="src language-scheme"><code class="src scheme">(defun evil-select-last-yanked-text ()
+  "uses evils markers to select the last yanked text"
+  (interactive)
+  (evil-goto-mark ?\[)
+  (evil-visual-char)
+  (evil-goto-mark ?\]))
+
+;; (defun evil-yank-and-indent-text ()
+;;   (interactive)
+;;   (evil-paste-after)
+;;   (evil-indent)
+;;   (evil-goto-mark ?\[))
+</code></pre>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-16-2" class="outline-3">
+<h3 id="sec-16-2">Escape should exit things</h3>
+<div class="outline-text-3" id="text-16-2">
 <p>
 Stole this from somewhere, attempts to map escape to various
 exits. It isn't perfect however, and I still need ctrl g from time
@@ -686,7 +1325,7 @@ to time.
 </p>
 <div class="org-src-container">
 
-<div class="invert"><pre><code class="language-scheme">(defun minibuffer-keyboard-quit ()
+<pre class="src language-scheme"><code class="src scheme">(defun minibuffer-keyboard-quit ()
   "Abort recursive edit.
 In Delete Selection mode, if the mark is active, just deactivate it;
 then it takes a second \\[keyboard-quit] to abort the minibuffer."
@@ -703,36 +1342,54 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
 (define-key minibuffer-local-completion-map [escape] 'minibuffer-keyboard-quit)
 (define-key minibuffer-local-must-match-map [escape] 'minibuffer-keyboard-quit)
 (define-key minibuffer-local-isearch-map [escape] 'minibuffer-keyboard-quit)
+(define-key minibuffer-local-isearch-map [escape] 'minibuffer-keyboard-quit)
+(define-key mc/keymap [escape] 'mc/keyboard-quit)
 (global-set-key [escape] 'evil-exit-emacs-state)
-</code></pre></div>
+</code></pre>
+</div>
 </div>
 </div>
 
-<div id="outline-container-sec-11-3-1" class="outline-4">
-<h4 id="sec-11-3-1"><span class="todo TODO">TODO</span> Make escape work consitently</h4>
-<div class="outline-text-4" id="text-11-3-1">
+<div id="outline-container-sec-16-3" class="outline-3">
+<h3 id="sec-16-3">Miscellaneous</h3>
+<div class="outline-text-3" id="text-16-3">
 <p>
-Escape fails in Helm, Js2 refactor, and I'm sure other various places
+Evil star allows you to use the * shortcut on visually selected text.
+Should be default vim behavior if you ask me.
 </p>
+<div class="org-src-container">
+
+<pre class="src language-scheme"><code class="src scheme">(require 'evil-visualstar)
+(global-evil-visualstar-mode t)
+</code></pre>
+</div>
+
+<p>
+Let motions (like f and F) cross lines.
+</p>
+<div class="org-src-container">
+
+<pre class="src language-scheme"><code class="src scheme">(setq evil-cross-lines t)
+</code></pre>
 </div>
 </div>
 </div>
 
 
-<div id="outline-container-sec-11-4" class="outline-3">
-<h3 id="sec-11-4">Evil vs mutliple-cursors</h3>
-<div class="outline-text-3" id="text-11-4">
+<div id="outline-container-sec-16-4" class="outline-3">
+<h3 id="sec-16-4">Evil vs mutliple-cursors</h3>
+<div class="outline-text-3" id="text-16-4">
 <p>
 Multiple cursors and evil <a href="https://github.com/magnars/multiple-cursors.el/issues/17">don't play well together</a>. I ripped this
 solution from <a href="https://github.com/jcpetkovich/.emacs.d">these configs</a>. It disables evil while multiple-cursors
-is running. I don't really use multiple cursors, since not being
-able to use evil creates dissonance; But js2-refactor does. This
-allows js2-refactor to still work nicely for me.
+is running. This allows js2-refactor to still work nicely for me.
+I can still use multiple cursors too, but it's less awesome without
+vim keybindings.
 </p>
 
 <div class="org-src-container">
 
-<div class="invert"><pre><code class="language-scheme">(defun user-utils/evil-visual-or-normal-p ()
+<pre class="src language-scheme"><code class="src scheme">(defun user-utils/evil-visual-or-normal-p ()
   "True if evil mode is enabled, and we are in normal or visual mode."
   (and (bound-and-true-p evil-mode)
        (not (memq evil-state '(insert emacs)))))
@@ -785,36 +1442,372 @@ allows js2-refactor to still work nicely for me.
 (add-hook 'rectangular-region-mode-hook 'mc-evil-compat/rectangular-switch-state)
 
 (defvar mc--default-cmds-to-run-once nil)
-</code></pre></div>
+</code></pre>
 </div>
 </div>
 </div>
 </div>
 
-<div id="outline-container-sec-12" class="outline-2">
-<h2 id="sec-12"><span class="todo TODO">TODO</span> Investigate helm swoop</h2>
-<div class="outline-text-2" id="text-12">
+<div id="outline-container-sec-17" class="outline-2">
+<h2 id="sec-17">Multiple Cursors</h2>
+<div class="outline-text-2" id="text-17">
 <p>
-This looks pretty powerful, and may replace any need for multiple
-cursors (for my editing needs). Confirm it plays nice with evil.
+mc's fast key expansion was getting in the way of my other shortcuts.
+So Disable it.
 </p>
+<div class="org-src-container">
+
+<pre class="src language-scheme"><code class="src scheme">(require 'multiple-cursors)
+;; Don't use expand-region fast keys
+(setq expand-region-fast-keys-enabled nil)
+</code></pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-18" class="outline-2">
+<h2 id="sec-18">Ace Jump</h2>
+<div class="outline-text-2" id="text-18">
+<p>
+I thought i'd use this, I really don't.
+It's cool but less functional then I expected (for my workflow)
+</p>
+<div class="org-src-container">
+
+<pre class="src language-scheme"><code class="src scheme">(setq ace-jump-mode-scope 'frame)
+(setq ace-jump-mode-move-keys
+      (loop for i from ?a to ?z collect i))
+
+(require 'ace-jump-mode)
+(defun evil-ace-jump-two-chars-mode (query-char query-char-2)
+  "evil AceJump two chars mode"
+  (interactive (list (read-char "First Char:")
+		     (read-char "Second:")))
+
+  (if (eq (ace-jump-char-category query-char) 'other)
+      (error "[AceJump] Non-printable character"))
+
+  ;; others : digit , alpha, punc
+  (setq ace-jump-query-char query-char)
+  (setq ace-jump-current-mode 'evil-ace-jump-char-mode)
+  (ace-jump-do (regexp-quote (concat (char-to-string query-char)
+				     (char-to-string query-char-2)))))
+
+(defun point-greater-then (v)
+  (lexical-let ((v v))
+    (lambda ()
+      (&gt; (point) v)))
+  )
+
+(defun point-less-then (v)
+  (lexical-let ((v v))
+    (lambda ()
+      (&lt; (point) v)))
+  )
+
+(defun evil-ace-jump-word-mode-backward ()
+  (interactive)
+  (let ((ace-jump-search-filter (point-less-then (point))))
+    (evil-ace-jump-word-mode)))
+
+(defun evil-ace-jump-word-mode-forward ()
+  (interactive)
+  (let ((ace-jump-search-filter (point-greater-then (point))))
+    (evil-ace-jump-word-mode)))
+
+(map-n-v-evil-states " j" 'evil-ace-jump-word-mode-forward)
+(map-n-v-evil-states " k" 'evil-ace-jump-word-mode-backward)
+</code></pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-19" class="outline-2">
+<h2 id="sec-19">wgrep-ag</h2>
+<div class="outline-text-2" id="text-19">
+<p>
+Still playing with this. Haven't used it enough times to figure out how it <i>should</i> be.
+</p>
+<div class="org-src-container">
+
+<pre class="src language-scheme"><code class="src scheme">(use-package wgrep
+  :load-path "~/.emacs.d/vendor/Emacs-wgrep"
+  :config
+  (progn
+    (use-package wgrep-helm)
+    (use-package wgrep-ack)
+    ;; (use-package wgrep-ag)
+
+    ;; (use-package helm-ag
+    ;;   :ensure t
+    ;;   :load-path "~/.emacs.d/vendor/emacs-helm-ag"
+    ;;   :config
+    ;;   (define-key helm-ag-map (kbd "C-c C-s") 'helm-grep-save-results))
+    ;; )
+    ))
+</code></pre>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-20" class="outline-2">
+<h2 id="sec-20">Drag Stuff</h2>
+<div class="outline-text-2" id="text-20">
+<p>
+Useful to drag lines up and down.
+</p>
+<div class="org-src-container">
+
+<pre class="src language-scheme"><code class="src scheme">(use-package drag-stuff
+    :load-path "~/.emacs.d/vendor/drag-stuff.el"
+    :bind
+    (("C-S-j" . drag-stuff-down)
+     ("C-S-k" . drag-stuff-up))
+    :config
+    (drag-stuff-mode t))
+</code></pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-21" class="outline-2">
+<h2 id="sec-21">Erc</h2>
+<div class="outline-text-2" id="text-21">
+<p>
+I use erc for chatting with bitlbee.
+</p>
+<div class="org-src-container">
+
+<pre class="src language-scheme"><code class="src scheme">(setq erc-auto-query 'frame
+      erc-query-display 'frame
+
+      erc-interpret-mirc-color t
+
+      erc-hide-list '("JOIN" "PART" "QUIT")
+
+      erc-kill-buffer-on-part t
+      erc-kill-queries-on-quit t
+      erc-kill-server-buffer-on-quit t)
+
+
+(evil-define-key `normal erc-mode-map (kbd "RET") 'erc-send-current-line)
+(evil-define-key `visual erc-mode-map (kbd "RET") 'erc-send-current-line)
+</code></pre>
+</div>
+
+<p>
+Automatically put us into flyspell-mode when using erc
+</p>
+<div class="org-src-container">
+
+<pre class="src language-scheme"><code class="src scheme">(add-hook 'erc-mode-hook 'flyspell-mode)
+</code></pre>
+</div>
+
+<p>
+Notify on message
+</p>
+<div class="org-src-container">
+
+<pre class="src language-scheme"><code class="src scheme">;; (defun bear-erc-privmsg-notify (proc res)
+;;   (flet ((rtrim-string (s) (replace-regexp-in-string "\\([[:space:]\n]*$\\)" "" s)))
+;;     (let ((channel-buffers     (erc-channel-list proc))
+;;           (sender              (or (car (split-string (erc-response.sender res) "!"))
+;;                                    (erc-response.sender res)))
+;;           (target-channel-name (car (erc-response.command-args res)))
+;;           (xwindow-class       (rtrim-string (shell-command-to-string "stumpish current-window-class"))))
+;;       (unless (or (string= xwindow-class "Emacs") ; we are in an emacs frame
+;;                   (member (get-buffer target-channel-name) channel-buffers)) ; this is a channel message
+;;         (progn (notify "Instant message!"
+;;                        (format "Direct message from %s" sender)
+;;                        :icon     "/home/ysph/.emacs.d/emacs.png"
+;;                        :timeout  120000
+;;                        :app "ERC")
+;;                nil        ; we never want this to interrupt processing
+;;                )))))
+;; (add-hook 'erc-server-PRIVMSG-functions 'bear-erc-privmsg-notify)
+</code></pre>
+</div>
 </div>
 </div>
 
 
-<div id="outline-container-sec-13" class="outline-2">
-<h2 id="sec-13"><span class="todo TODO">TODO</span> Bring in node REPL mode from chromebook</h2>
-<div class="outline-text-2" id="text-13">
-<ul class="org-ul">
-<li><code>[&nbsp;]</code> configure for es6 with 6to5
-</li>
-<li><code>[&nbsp;]</code> Clean up implementation
-</li>
-<li><code>[&nbsp;]</code> pull from chromebook into master
-</li>
-</ul>
+<div id="outline-container-sec-22" class="outline-2">
+<h2 id="sec-22">Aggressive indent</h2>
+<div class="outline-text-2" id="text-22">
+<p>
+use package isn't working, installed with prelude require instead
+</p>
+<div class="org-src-container">
+
+<pre class="src language-scheme"><code class="src scheme">(global-aggressive-indent-mode)
+
+;; (use-package aggressive-indent
+;;   :ensure names
+;;   :config
+;;   (progn
+;;     (global-aggressive-indent-mode t)
+;;     ))
+</code></pre>
 </div>
 </div>
+</div>
+
+<div id="outline-container-sec-23" class="outline-2">
+<h2 id="sec-23">Relative line numbers</h2>
+<div class="outline-text-2" id="text-23">
+<p>
+Some customizations that allow relative line numbers to be described as
+alternating letters. This way I can jump to those lines via shortcut. This
+has replace ace-jump-line for me since I don't have to wait for feedback.
+</p>
+
+<div class="org-src-container">
+
+<pre class="src language-scheme"><code class="src scheme">(use-package stripe-buffer
+  :load-path "~/.emacs.d/vendor/stripe-buffer"
+  :config
+  (progn
+    (add-hook 'prog-mode-hook 'stripe-buffer-mode)
+    (add-hook 'org-mode-hook 'stripe-buffer-mode)
+
+    (set-face-background stripe-highlight-face "#2A2B25")
+    ))
+
+(use-package hl-line
+  :ensure
+  :config
+  (progn
+    (add-hook 'prog-mode-hook 'hl-line-mode)
+    (add-hook 'org-mode-hook 'hl-line-mode)
+    ))
+
+
+(use-package relative-line-numbers
+  :ensure
+  :config
+  :disabled
+  (progn
+    (defun relative-jump-chars-list ()
+      (list
+       ?f ?d ?s ?a ?v
+       ?t ?b ?c ?e ?g
+       ?u ?h ?i ?y ?j
+       ?k ?l ?m ?n ?o
+       ?p ?q ?r ?w ?x
+       ?z
+       ))
+
+    (defun relative-jump-chars-permutations-default()
+      (cl-mapcar
+       'char-to-string
+       (relative-jump-chars-list)
+       ))
+
+    (defvar relative-jump-chars-permutations
+      (relative-jump-chars-permutations-default))
+
+    ;; (defun permutations-up-to (size elements)
+    ;;   (if (= size 0)
+    ;;       nil
+    ;;     (append  (permutations-up-to (- size 1) elements) (permutations size elements))
+    ;;     ))
+
+    ;; (defun permutations (size elements)
+    ;;   (if (= size 0)
+    ;;       '(())
+    ;;     (cl-mapcan (lambda (p)
+    ;;                  (cl-mapcar (lambda (e)
+    ;;                               (cons e p))
+    ;;                             elements))
+    ;;                (permutations (- size 1) elements))))
+
+    (defun relative-jump-chars-line-format (offset)
+      (let ((rel (abs offset))
+	    (pad 3)
+	    (div 2))
+	(cond
+	 ((= rel 0)
+	  (let ((str (number-to-string (line-number-at-pos))))
+	    (if (&gt; 3 (length str))
+		(concat " " str)
+	      str)))
+	 ((or
+	   (&lt; rel pad)
+	   (&gt; (mod rel div) 0)) "")
+	 (t (let ((char (nth
+			 (/ (- rel pad) div)
+			 relative-jump-chars-permutations)))
+	      (if char
+		  (concat " " char " " )
+		""))))))
+
+    (defun relative-jump-chars (char)
+      (let ((pad 3)
+	    (div 2)
+	    (i (cl-position
+		(char-to-string char)
+		relative-jump-chars-permutations
+		:test 'cl-equalp)))
+	(+
+	 (* i div)
+	 (+ pad 1))))
+
+    (defun relative-jump-chars-next ()
+      (interactive)
+      (evil-next-visual-line (relative-jump-chars (read-char)) ))
+
+    (defun relative-jump-chars-previous()
+      (interactive)
+      (evil-previous-visual-line (relative-jump-chars (read-char)) ))
+
+    (setq relative-line-numbers-format 'relative-jump-chars-line-format)
+    (setq relative-line-numbers-motion-function 'forward-visible-line)
+    ;; (map-n-v-evil-states " j" 'relative-jump-chars-next)
+    ;; (map-n-v-evil-states " k" 'relative-jump-chars-previous)
+
+    (add-hook 'prog-mode-hook 'relative-line-numbers-mode)
+    (add-hook 'org-mode-hook 'relative-line-numbers-mode)
+    ))
+</code></pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-24" class="outline-2">
+<h2 id="sec-24">Git Gutter Fringe</h2>
+<div class="outline-text-2" id="text-24">
+<div class="org-src-container">
+
+<pre class="src language-scheme"><code class="src scheme">(req-package git-gutter-fringe
+  :config
+  (progn
+    (global-diff-hl-mode 0)
+
+    (setq git-gutter-fr:side 'right-fringe)
+
+    (add-hook 'text-mode-hook 'git-gutter-mode)
+    (add-hook 'prog-mode-hook 'git-gutter-mode)
+    ))
+</code></pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-25" class="outline-2">
+<h2 id="sec-25">Finish config</h2>
+<div class="outline-text-2" id="text-25">
+<div class="org-src-container">
+
+<pre class="src language-scheme"><code class="src scheme">(req-package-finish)
+</code></pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-26" class="outline-2">
+<h2 id="sec-26">Tasks</h2>
+<div class="outline-text-2" id="text-26">
+</div></div>
 </article><footer class="invert"> <div class="pager"><a href="/posts/i3-finder/"><i class="fa fa-arrow-left"></i> I3 finder</a><a href="/posts/hello-world/">hello world <i class="fa fa-arrow-right"></i></a></div><div id="disqus_thread" class="invert"></div><script type="text/javascript">/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
 var disqus_shortname = 'thrownforaloop'; // required: replace example with your forum shortname
 
@@ -824,5 +1817,5 @@ var disqus_shortname = 'thrownforaloop'; // required: replace example with your 
     dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
 })();
-</script></footer></div><div id="side" class="col-md-4"><nav id="affix-nav" data-spy="affix" data-offset-top="125"><ul class="nav nav-stacked nav-pills"><li><a href="#page-header">Emacs Configuration</a></li><li><a href="#sec-1">About</a></li><li><a href="#sec-2">Emacs initialization</a></li><li><a href="#sec-3">Javascript</a></li><li><a href="#sec-4">Jade</a></li><li><a href="#sec-5">elisp</a></li><li><a href="#sec-6">Snippets And Autocompletion</a></li><li><a href="#sec-7">Custom Commands</a></li><li><a href="#sec-8">Org-mode</a></li><li><a href="#sec-9">Global Key Bindings</a></li><li><a href="#sec-10">Evil Key Bindings</a></li><li><a href="#sec-11">Evil</a></li><li><a href="#sec-12">TODO Investigate helm swoop</a></li><li><a href="#sec-13">TODO Bring in node REPL mode from chromebook</a></li><li><a href="#disqus_thread">comments</a></li></ul></nav></div></div></div><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script><!-- script.--><!--     $('h2,h3,h4').attr('data-spy','affix')--><script type="text/javascript" src="/js/bootstrap.min.js"></script><script type="text/javascript" src="/js/prism.js"></script><!-- script.--><!--     $(document).ready(function(){--><!--         $("#sid").affix({--><!--             offset: { --><!--                 top: 190 --><!--             }--><!--         });--><!--     });-->
-</html>
+</script></footer></div><div id="side" class="col-md-4"><nav id="affix-nav" data-spy="affix" data-offset-top="125"><ul class="nav nav-stacked nav-pills"><li><a href="#page-header">Emacs Configuration</a></li><li><a href="#sec-1">About</a></li><li><a href="#sec-2">Emacs initialization</a></li><li><a href="#sec-3">Javascript</a></li><li><a href="#sec-4">Python</a></li><li><a href="#sec-5">C#</a></li><li><a href="#sec-6">Scala</a></li><li><a href="#sec-7">Jade</a></li><li><a href="#sec-8">elisp</a></li><li><a href="#sec-9">dot diagrams</a></li><li><a href="#sec-10">Snippets And Autocompletion</a></li><li><a href="#sec-11">Custom Commands</a></li><li><a href="#sec-12">Org-mode</a></li><li><a href="#sec-13">Web Mode</a></li><li><a href="#sec-14">Key Bindings</a></li><li><a href="#sec-15">Key chords</a></li><li><a href="#sec-16">Evil</a></li><li><a href="#sec-17">Multiple Cursors</a></li><li><a href="#sec-18">Ace Jump</a></li><li><a href="#sec-19">wgrep-ag</a></li><li><a href="#sec-20">Drag Stuff</a></li><li><a href="#sec-21">Erc</a></li><li><a href="#sec-22">Aggressive indent</a></li><li><a href="#sec-23">Relative line numbers</a></li><li><a href="#sec-24">Git Gutter Fringe</a></li><li><a href="#sec-25">Finish config</a></li><li><a href="#sec-26">Tasks</a></li><li><a href="#disqus_thread">comments</a></li></ul></nav></div></div></div><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script><script type="text/javascript" src="/js/bootstrap.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/languages/javascript.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/languages/scala.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/languages/scheme.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/languages/cs.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/languages/bash.min.js"></script><script>hljs.configure({tabReplace:'        '})
+hljs.initHighlightingOnLoad()</script></html>
