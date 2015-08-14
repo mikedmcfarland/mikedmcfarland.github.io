@@ -122,7 +122,7 @@ store backups in one folder instead next to the file
 </p>
 <div class="org-src-container">
 
-<pre class="src language-scheme"><code class="src scheme">(setq backup-directory-alist `(("." . "~/.emacs.d/.backups")))
+<pre class="src language-scheme"><code class="src scheme">(setq backup-directory-alist `((".*" . "~/.emacs.d/.backups")))
 
 (setq make-backup-files t               ; backup of a file the first time it is saved.
       backup-by-copying t               ; don't clobber symlinks
@@ -149,13 +149,10 @@ Auto save is fine, just don't do it in my working directories
 </p>
 <div class="org-src-container">
 
-<pre class="src language-scheme"><code class="src scheme">(defvar user-temporary-file-directory
-  (concat temporary-file-directory user-login-name "/"))
-
-(setq auto-save-list-file-prefix
-      (concat user-temporary-file-directory ".auto-saves-"))
-(setq auto-save-file-name-transforms
-      `((".*" ,user-temporary-file-directory t)))
+<pre class="src language-scheme"><code class="src scheme">(defvar my-auto-save-folder "~/.emacs.d/auto-save"); folder for auto-saves
+(setq auto-save-list-file-prefix "~/.emacs.d/auto-save/.saves-"); set prefix for auto-saves
+(setq auto-save-file-name-transforms `((".*" ,my-auto-save-folder t))); location for all auto-save files
+(setq tramp-auto-save-directory my-auto-save-folder); auto-save tramp files in local directory
 </code></pre>
 </div>
 </div>
@@ -264,15 +261,16 @@ A few miscallaneious things
 (setq-default tab-width 2)
 
 (add-hook 'prog-mode-hook
-	   (lambda () (setq prettify-symbols-alist
-		       '(
-			 ("=&gt;" . ?⇒)
-			 ("&lt;-" . ?←)
-			 ("-&gt;" . ?→)
-			 ("&lt;&lt;&lt;" . ?⋘)
-			 ("&gt;&gt;&gt;" . ?⋙)
-			 ("lambda" . ?λ)
-			 ))))
+	  (lambda () (setq prettify-symbols-alist
+		      '(
+			("=&gt;" . ?⇒)
+			("&lt;-" . ?←)
+			("-&gt;" . ?→)
+			("&lt;&lt;&lt;" . ?⋘)
+			("&gt;&gt;&gt;" . ?⋙)
+			("lambda" . ?λ)
+			("function" . ?λ)
+			))))
 
 
 (global-prettify-symbols-mode t)
@@ -510,6 +508,7 @@ manually all the time. This seeks out '=' or ':' in lines, and aligns them.
 
 (use-package omnisharp
   :load-path "~/.emacs.d/vendor/omnisharp-emacs"
+  :disabled t
   :config
   (progn
     (add-hook 'csharp-mode-hook 'omnisharp-mode)
